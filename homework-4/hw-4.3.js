@@ -2,6 +2,8 @@ let birthYear = prompt ("Який рік твого народження?");
 let town = prompt ("У якому місті ти живеш?");
 let sport = prompt ("Який твій улюблений вид спорту?");
 
+// let замінити в prompt на const   
+
 //скріпт про рік народження
 
 let currentYear = new Date().getFullYear();
