@@ -2,7 +2,7 @@
 
 let str = ' ';
 for (let a = 20; a <= 30; a+=0.5){
-    str = a + ' ';
+    str += a + ' ';
 }
     console.log(`Here are numbers ${str}`);
 
