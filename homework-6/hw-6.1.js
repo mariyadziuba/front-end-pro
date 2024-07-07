@@ -8,6 +8,7 @@
 function stringSlice (string, symbolsToDelete) {  
 
     symbolsToDelete.forEach((element) => { 
+
     string  = string.split(element).join('')   ;            
 	});
     
