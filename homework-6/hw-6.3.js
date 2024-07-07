@@ -17,7 +17,7 @@ function removeElement (array, item) {
 // Метод indexOf()елементів Array повертає перший індекс, за яким даний елемент можна знайти в масиві, або -1, якщо його немає.
 
         if (index > -1){
-    	    array.splice(index, 1);
+    	    array.splice(index, 1); // 1- видаляє один елемент
         }
     });
 
