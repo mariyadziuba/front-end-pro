@@ -7,10 +7,11 @@
 
 function stringSlice (string, symbolsToDelete) {  
 
-    symbolsToDelete.forEach((element) => { string.split().join('')               
+    symbolsToDelete.forEach((element) => { 
+    string  = string.split(element).join('')   ;            
 	});
     
-    return string;
+    return string ;
 }
 
 console.log(stringSlice("hello world", ['l', 'd']));
