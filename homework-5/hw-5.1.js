@@ -20,7 +20,7 @@ while (b<=30) {
 
 let string = ' ';
 let c = 20;
-do{
+do {
     c+=0.5;
     string += c + ' ';
 }
