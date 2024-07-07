@@ -10,7 +10,7 @@ function arithmeticAverage (array) {
     let count = 0;
     
     array.forEach(element => {
-        if (typeof element === "number") {
+        if (typeof element === "number" && !NaN) {
             sum += element; // sum = sum + element;
             count++; // count = count + 1;
         }
