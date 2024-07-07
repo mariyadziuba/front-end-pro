@@ -7,7 +7,7 @@
 
 function stringSlice (string, symbolsToDelete) {  
 
-    symbolsToDelete.forEach((element) => {                
+    symbolsToDelete.forEach((element) => { string.split().join('')               
 	});
     
     return string;
@@ -17,14 +17,14 @@ console.log(stringSlice("hello world", ['l', 'd']));
 
 
 // forEach - цикл для масивів, в якому кожен його елемент перебирається
-// split - перетворює строку на масив і видаляє з неї згадані в аргументі символи, join - зєднує
+// split - метод, який перетворює строку на масив і видаляє з неї згадані в аргументі символи, join - зєднує
 
 // цикл матиме дві ітерації:
 
 // "hello world"
 
 // l
-// "hello world" = ["he", "", "o wor", "d"] = "heo word";
+// "hello world" =(split) ["he", "", "o wor", "d"] =(join) "heo word";
 
 // d
-// "heo word" = ["heo wor", ""] = "heo wor";
+// "heo word" =(split) ["heo wor", ""] =(join) "heo wor";
