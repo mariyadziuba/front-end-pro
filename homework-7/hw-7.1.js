@@ -7,3 +7,17 @@
 // console.log(sum(10)); // 20
 
 // console.log(sum(7)); // 27
+
+function addSumm() {
+    
+    let currentSumm = 0;
+
+    return function(num){
+        currentSumm += num;
+        return currentSumm;
+    };
+}
+
+const summ = addSumm();
+
+console.log(summ());
