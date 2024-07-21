@@ -15,14 +15,16 @@ function getSummSalary(section) {
 
     if (Array.isArray(section)) { // якщо тип даних є масивом, то нехай до змінної totalSumm додаються усі значення salary
         for (let worker of section)
-            totalSumm += worker.salary;
-    } else {
-    for (let department of Object.values(section)) { // якщо тип даних є об'єктом, то через метод Object.values отримуємо масив із значень об'єкта
+            totalSumm += worker.salary; 
+        } 
+    else {
+        for (let department of Object.values(section)) { // якщо тип даних є об'єктом, то через метод Object.values отримуємо масив із значень об'єкта
         totalSumm += getSummSalary(department); // функція рекурсійно пройдеться по отриманому масиві і до totalSumm додасть усі значення salary
+        }
     }
-}
     return totalSumm;   
 }
 
-let totalSummSalary = getSummSalary(company);
+let totalSummSalary = getSummSalary(company); // викликаємо функцію для об'єкту company і зберігаємо значення у новій змінній
+
 console.log(totalSummSalary);
