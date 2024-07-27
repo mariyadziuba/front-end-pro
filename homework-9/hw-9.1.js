@@ -15,7 +15,7 @@ function getSummSalary(section) {
 
     if (Array.isArray(section)) { // якщо тип даних є масивом, то нехай до змінної totalSumm додаються усі значення salary
         for (let worker of section)
-            totalSumm += worker.salary; 
+            totalSumm += worker.salary;  // тут сумується значення sales, оскільки sales є масивом
         } 
     else {
         for (let department of Object.values(section)) { // якщо тип даних є об'єктом, то через метод Object.values отримуємо масив із значень об'єкта
