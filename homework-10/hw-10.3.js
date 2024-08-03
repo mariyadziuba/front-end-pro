@@ -7,15 +7,22 @@ const phoneBook = {
         {name: 'Maria L', phone: '111-111-111', email: 'maria@mail.com'},
         {name: 'Julia N', phone: '000-111-000', email: 'julia@mail.com'},
         {name: 'Petro K', phone: '000-222-000', email: 'petro@mail.com'}
-    ]
-};
-console.log(phoneBook.contacts);
+    ],
+
 
 // метод для пошуку контактів за ім'ям
 
-const nameFromContacts = phoneBook.contacts.map(contact => contact.name);
-console.log(nameFromContacts);
+findContactByName: function(name) {
+    const contact = this.contacts.find(contact => contact.name === name);
+    return contact ? contact : 'Contact not found';
+},
+
 
 //метод для додавання нових контактів.
 
-phoneBook.contacts.push();
+addContact: function(name, phone, email) {
+    const newContact = { name, phone, email };
+    this.contacts.push(newContact);
+}
+
+};
